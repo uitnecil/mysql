@@ -1,0 +1,36 @@
+{
+  "name": "mysql-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development_local nodemon ./server.js -w . -w api -w modules -w config -w routes -w schemas -w constants",
+    "start_cluster": "NODE_ENV=production nodemon ./server.js -w . -w api -w modules -w config -w routes -w schemas -w constants",
+    "test-unit": "NODE_ENV=test mocha './**/*.spec.js' --timeout 10000 --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "joi": "^14.3.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.9",
+    "randomstring": "^1.1.5",
+    "rxjs": "^5.5.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-sorted": "^0.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.2",
+    "sinon-chai": "^3.3.0",
+    "supertest": "^3.3.0"
+  }
+}
