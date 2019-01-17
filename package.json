@@ -12,6 +12,7 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "dateformat": "^3.0.3",
