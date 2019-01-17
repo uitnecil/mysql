@@ -1,3 +1,4 @@
+'use strict';
 process.title = 'node-mysql-lice';
 
 const cluster = require('cluster');
