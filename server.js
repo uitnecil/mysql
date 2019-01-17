@@ -46,6 +46,7 @@ if (
 // Start the server
     const httpServerIp = '0.0.0.0';
     server.listen(httpServerPort, httpServerIp, (req, res) => {
+        // change 1
         logger.info(`Server listening on ${httpServerIp}:${httpServerPort}`);
     });
     /*
