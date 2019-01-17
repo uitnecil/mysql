@@ -40,6 +40,7 @@ module.exports = (req, res) => {
                 msg = 'Internal error occurred. Please try again later.'
         }
         sendMsg(res, 500, `Error: ${msg}`);
+
     };
 
     const queries = req.body.queries;
