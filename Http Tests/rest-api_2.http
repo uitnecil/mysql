@@ -1,0 +1,17 @@
+PUT http://localhost:7878/api/v1/customers/add-transaction
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-07T073505.200.json
+<> 2019-01-07T073414.200.json
+
+###
+
+GET http://localhost:7878/api/v1/customers/get-all
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-07T073344.200.json
+<> 2019-01-07T073124.200.json
+
+###
